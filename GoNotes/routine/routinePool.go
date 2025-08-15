@@ -1,8 +1,6 @@
 package main
 
 import (
-	"net/http"
-	_ "net/http/pprof" // 注意：这里是空白导入，只执行init函数
 	"sync"
 )
 
@@ -99,9 +97,8 @@ func main() {
 
 	// pool.Wait()
 	// pool.Stop()
-	myMain()
-	// 启动一个HTTP服务器来暴露pprof端点
-
-	// 通常在 localhost 的一个专用端口上监听
-	http.ListenAndServe("localhost:6060", nil)
+	PrintInOrder()
+	// 打印完成后，程序会自动退出
+	// 注释掉HTTP服务器，确保进程在100次打印完成后停止
+	// http.ListenAndServe("localhost:6060", nil)
 }

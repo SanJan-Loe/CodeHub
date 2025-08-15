@@ -14,7 +14,6 @@ class A{
 class B : public A {};
 
 int main () {
-
     std::cout <<"here get the empty class A size "<< sizeof(A) <<endl;
     std::cout <<"here get the empty class B size "<< sizeof(B) <<endl;
     std::cout <<"here get the empty class B size "<< sizeof(B) <<endl;

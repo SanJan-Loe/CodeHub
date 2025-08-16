@@ -1,0 +1,12 @@
+Name: user-api
+Host: 0.0.0.0
+Port: 8888
+
+MqlDsn:
+
+# Kafka 配置
+KafkaConf:
+  Brokers:
+    - "localhost:9092"
+  Topic: "user-login-events"
+  GroupId: "user-api-group"

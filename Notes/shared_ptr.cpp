@@ -1,6 +1,7 @@
 #include <iostream>
 #include <bit>
 
+using namespace std;
 
 template<class T>
 class MySharedPtr {
